@@ -8,15 +8,13 @@ class Dice:
         self.roll()
 
     def roll(self):
-        value = random.randint(1, self.die_sides + 1)
+        value = random.randint(1, self.die_sides)
         return value
 
 
 player_choice = input("Would you like to roll the dice? 'y' for yes or 'n' for no.  ")
 
 while player_choice == 'y':
-
-
 
     attack_dice = Dice(6)
     attack_roll = attack_dice.roll()
